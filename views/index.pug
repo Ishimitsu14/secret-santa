@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div.main
+    .container
+      .content
+        h1="Choose a Pokemon (себя надо выбрать...)"
+        .player-list
+          each player in players
+            a.player-list__item(href=`/become-santa?playerId=${player.id}`)
+              .player-list__name #{player.name}
+              img.player-list__photo(src=`/images/players/${player.id}.webp`)

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div.main
+    .container
+      .content
+        .your-child
+          .your-child__name #{child.name}
+          img.your-child__photo(src=`/images/players/${child.id}.webp`)
+              
