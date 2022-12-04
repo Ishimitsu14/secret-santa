@@ -12,7 +12,8 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  text-transform: none;
+  text-decoration: none;
 }
 
 .main {
